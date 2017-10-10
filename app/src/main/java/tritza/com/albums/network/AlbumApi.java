@@ -1,4 +1,4 @@
-package tritza.com.albums.display;
+package tritza.com.albums.network;
 
 import io.reactivex.Observable;
 import java.util.List;

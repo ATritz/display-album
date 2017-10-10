@@ -1,4 +1,4 @@
-package tritza.com.albums.display;
+package tritza.com.albums.network;
 
 import java.io.IOException;
 import okhttp3.HttpUrl;

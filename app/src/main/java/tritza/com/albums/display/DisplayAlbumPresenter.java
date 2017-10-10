@@ -8,6 +8,8 @@ import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
 import java.util.List;
 import tritza.com.albums.model.Album;
+import tritza.com.albums.network.AlbumApi;
+import tritza.com.albums.network.RetrofitService;
 
 public class DisplayAlbumPresenter {
 
