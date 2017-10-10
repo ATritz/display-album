@@ -14,6 +14,10 @@ public class RetrofitService {
 
     String SERVICE_ENDPOINT = "http://jsonplaceholder.typicode.com";
 
+    /**
+     * Create the okhhtp client for retrofit
+     * @return
+     */
     private OkHttpClient createOkHttpClient() {
         final OkHttpClient.Builder httpClient =
             new OkHttpClient.Builder();
@@ -34,6 +38,10 @@ public class RetrofitService {
         return httpClient.build();
     }
 
+    /**
+     * Create the retrofit service to make api calls
+     * @return
+     */
     private Retrofit createRetrofit() {
         return new Retrofit.Builder()
             .baseUrl(SERVICE_ENDPOINT)
@@ -43,6 +51,10 @@ public class RetrofitService {
             .build();
     }
 
+    /**
+     * Create the retrofit service with the Album Api
+     * @return
+     */
     public AlbumApi getAlbumApi() {
         final Retrofit retrofit = createRetrofit();
         return retrofit.create(AlbumApi.class);

@@ -1,4 +1,4 @@
-package tritza.com.albums.display;
+package tritza.com.albums.model;
 
 public class Album {
 
@@ -8,6 +8,9 @@ public class Album {
     private final String url;
     private final String thumbnailUrl;
 
+    /**
+     * Model for Albums
+     */
     public Album(String albumId, String id, String title, String url, String thumbnailUrl) {
         this.albumId = albumId;
         this.id = id;
